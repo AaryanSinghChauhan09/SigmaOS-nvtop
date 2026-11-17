@@ -3,7 +3,7 @@ name = "SigmaOS-nvtop"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "nvtop component"
+description = "SigmaOS SigmaOS-nvtop component"
 upstream = []
 
 [contract]
