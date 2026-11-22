@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-nvtop Component Wiki
+# SigmaOS-nvtop Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-nvtop provides SigmaOS SigmaOS-nvtop component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-nvtop provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-nvtop Abstraction
-- Fail-Fast on SigmaOS-nvtop Initialization Errors
-- Deterministic SigmaOS-nvtop Setup
-- Clear Abstraction Over SigmaOS-nvtop APIs
-- Composition over Inheritance for SigmaOS-nvtop extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-nvtop Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-nvtop Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-nvtop Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-nvtop APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-nvtop extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-nvtop follows a SigmaOS-nvtop pattern:
+SigmaOS-nvtop follows a SigmaOS-nvtop pattern:
 - **SigmaOS-nvtop Core**: Provides SigmaOS-nvtop support, SigmaOS-nvtop management, and SigmaOS-nvtop tracking
 - **Management**: Supports SigmaOS-nvtop management, SigmaOS-nvtop configuration, and SigmaOS-nvtop lifecycle
 - **Tracking**: Supports SigmaOS-nvtop status, SigmaOS-nvtop tracking, and SigmaOS-nvtop lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-nvtop follows a SigmaOS-nvtop pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-nvtop by given configuration
--  - Register a SigmaOS-nvtop by given name
--  - Get SigmaOS-nvtop status and SigmaOS-nvtop availability
--  - Track SigmaOS-nvtop management and SigmaOS-nvtop tracking
+- Manage a SigmaOS-nvtop by given configuration
+- Register a SigmaOS-nvtop by given name
+- Get SigmaOS-nvtop status and SigmaOS-nvtop availability
+- Track SigmaOS-nvtop management and SigmaOS-nvtop tracking
 - Error types for SigmaOS-nvtop failure scenarios or unsupported SigmaOS-nvtop types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-nvtop init, SigmaOS-nvtop management)
 3. **Assert**: Verify the expected SigmaOS-nvtop results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-nvtop initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-nvtop failure scenarios
 - Unit tests provided for SigmaOS-nvtop management and configuration
